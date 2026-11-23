@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter'
 import Header from './header'
 import Nav from './nav'
 import Footer from './footer'
@@ -15,12 +16,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
+    <html lang="ko">
       <body>
-        <Header />
-        <Nav />
-        {children}
-        <Footer />
+        <AppRouterCacheProvider>
+          <Header />
+          <Nav />
+          {children}
+          <Footer />
+        </AppRouterCacheProvider>
       </body>
     </html>
   )

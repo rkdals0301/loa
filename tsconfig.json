@@ -7,7 +7,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],                             /* 컴파일에 포함될 라이브러리 파일 목록 */
     "allowJs": true,                       /* 자바스크립트 파일 컴파일 허용 여부 */
     // "checkJs": true,                       /* .js 파일의 오류 검사 여부 */
-    "jsx": "preserve",                     /* JSX 코드 생성 설정: 'preserve', 'react-native', 혹은 'react'. */
+    "jsx": "react-jsx",                     /* JSX 코드 생성 설정: 'react-jsx', 'preserve', 'react-native', 혹은 'react'. */
     // "declaration": true,                   /* '.d.ts' 파일 생성 여부. */
     // "declarationMap": true,                /* 각 '.d.ts' 파일의 소스맵 생성 여부. */
     // "sourceMap": true,                     /* '.map' 파일 생성 여부. */
@@ -73,7 +73,7 @@
       }
     ],
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
 
